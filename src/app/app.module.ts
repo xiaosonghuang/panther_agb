@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { SimpleNotificationsModule } from 'angular2-notifications'
 import { NgPipesModule } from 'ngx-pipes';
-import { MaterialModule } from '@angular/material';
+import { MaterialModule } from '../material.module';
 
 
 import { routing, appRoutingProviders } from './app.routes';

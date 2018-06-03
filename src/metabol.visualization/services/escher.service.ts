@@ -41,9 +41,9 @@ export class EscherService {
       let producer = rs.filter(x => model.reactions[x].metabolites[metaboliteId] < 0);
       let consumer = rs.filter(x => model.reactions[x].metabolites[metaboliteId] > 0);
       this.map.new_reaction_from_scratch(producer[0], coor, 0);
-      let mindex = that.selected_metabolite_index(this.map, metaboliteId);
+      // let mindex = that.selected_metabolite_index(this.map, metaboliteId);
 
-      this.map.new_reaction_for_metabolite(consumer[0], mindex, 180);
+      // this.map.new_reaction_for_metabolite(consumer[0], mindex, 180);
       // this.map.new_reaction_for_metabolite(rs[2], mindex, 60);
 
       this.map.zoom_extent_nodes();
@@ -72,9 +72,9 @@ export class EscherService {
     }
   }
 
-  selected_metabolite_index(map, metabolite_id) {
+  /* selected_metabolite_index(map, metabolite_id) {
     return _.toPairs(map.nodes).filter(x => x[1].bigg_id == metabolite_id)[0][0];
-  }
+  } */
 
   escherModelForPathway(model, pathway) {
     return {

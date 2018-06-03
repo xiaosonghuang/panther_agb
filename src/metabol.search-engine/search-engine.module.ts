@@ -5,7 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgPipesModule } from 'ngx-pipes';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from '../material';
+import { MaterialModule } from '../material.module';
 
 import {
   ChemicalEquationComponent,

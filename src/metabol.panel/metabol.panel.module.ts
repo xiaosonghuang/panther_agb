@@ -8,7 +8,7 @@ import { VisualizationModule } from '../metabol.visualization';
 
 import { NgPipesModule } from 'ngx-pipes';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from '@angular/material';
+import { MaterialModule } from '../material.module';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
