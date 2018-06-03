@@ -5,9 +5,9 @@
 	Compare
       </button>
       <form [formGroup]="form">
-	<md-tab-group>
+	<mat-tab-group>
 	  <ng-template ngFor let-type [ngForOf]="data | keys"> 
-	    <md-tab *ngIf="data[type].length != 0" [label]="(type == 'list' ? 'private' : type) | titlecase">
+	    <mat-tab *ngIf="data[type].length != 0" [label]="(type == 'list' ? 'private' : type) | titlecase">
 	      <div class="panel panel-default">
 		<ul class="list-group">
 		  <li class="list-group-item" *ngFor="let i of data[type] | orderBy:'name'">
@@ -19,9 +19,9 @@
 		  </li>
 		</ul>
 	      </div>
-	    </md-tab>
+	    </mat-tab>
 	  </ng-template>
-	</md-tab-group>
+	</mat-tab-group>
       </form>
     </div>
   </div>
