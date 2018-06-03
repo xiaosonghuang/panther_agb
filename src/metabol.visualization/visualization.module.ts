@@ -9,7 +9,7 @@ import {
   PathwayHistogramComponent
 } from './components';
 
-import { MdDialogModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material';
 
 
 import { EscherService } from './services'
@@ -17,7 +17,7 @@ import { EscherService } from './services'
 @NgModule({
   imports: [
     CommonModule,
-    MdDialogModule
+    MatDialogModule
   ],
   declarations: [
     ReactionVisualizationComponent,
