@@ -19,7 +19,7 @@ export class geneDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
-      this.loader.get("recon2", (recon) => {
+      this.loader.get("recon6", (recon) => {
         this.gene = recon.genes[params['id']];
         this.relatedmetabolites = _.keys(this.gene.metabolites).map(x => recon.metabolites[x]);
       });
