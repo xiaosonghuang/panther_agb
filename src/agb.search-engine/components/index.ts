@@ -3,7 +3,5 @@ export { speciesComponent } from "./species";
 export { geneDetailsComponent } from "./gene-details";
 export { SearchResultComponent } from "./search-result";
 export { SearchPageComponent } from "./search-page";
-export { metaboliteDetailsComponent } from "./metabolite-details";
 export { SearchBarComponent } from "./search-bar";
-export { ChemicalEquationComponent } from "./chemical-equation";
 export { AnalysisSearchComponent } from './analysis-search'

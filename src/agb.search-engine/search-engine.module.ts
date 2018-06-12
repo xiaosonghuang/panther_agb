@@ -8,9 +8,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material.module';
 
 import {
-  ChemicalEquationComponent,
+  //ChemicalEquationComponent,
   geneDetailsComponent,
-  metaboliteDetailsComponent,
+  //metaboliteDetailsComponent,
   SearchBarComponent,
   SearchPageComponent,
   SearchResultComponent,
@@ -37,9 +37,9 @@ import { searchEngineRouting } from './search-engine.routes';
   ],
   // providers: [searchEngineRoutingProviders],
   declarations: [
-    ChemicalEquationComponent,
+    //ChemicalEquationComponent,
     geneDetailsComponent,
-    metaboliteDetailsComponent,
+    //metaboliteDetailsComponent,
     SearchBarComponent,
     SearchPageComponent,
     SearchResultComponent,
