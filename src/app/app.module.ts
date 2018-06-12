@@ -11,7 +11,7 @@ import { MaterialModule } from '../material.module';
 import { routing, appRoutingProviders } from './app.routes';
 import { AppComponent } from './app.component';
 
-import { DocumentationModule } from '../documentation';
+//import { DocumentationModule } from '../documentation';
 import { agbCommonModule } from '../agb.common';
 import { SearchEngineModule } from "../agb.search-engine";
 //import { VisualizationModule } from "../agb.visualization";
@@ -30,7 +30,7 @@ import { speciesAnalyzeModule } from "../agb.species-analyze";
     HttpModule,
 
     agbCommonModule,
-    DocumentationModule,
+    //DocumentationModule,
     agbAuthModule,
     SearchEngineModule,
     speciesAnalyzeModule,
