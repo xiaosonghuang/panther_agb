@@ -6,15 +6,12 @@ import {
   speciesComponent,
   geneDetailsComponent,
   SearchResultComponent,
-  SearchPageComponent,
-  //metaboliteDetailsComponent,
-  AnalysisSearchComponent
+  SearchPageComponent
 } from "./components";
 
 export const SearchEngineRoutes: Routes = [
   { path: 'gene/:id', component: geneDetailsComponent },
   { path: 'search', component: SearchPageComponent },
-  { path: 'search-analysis', component: AnalysisSearchComponent },
   { path: 'search-result/:query', component: SearchResultComponent },
   {
     path: 'species', component: speciesComponent,

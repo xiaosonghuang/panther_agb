@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {CurrencymetabolitesService, AppDataLoader} from './services';
+import {AppDataLoader} from './services';
 
 @NgModule({
   imports: [
@@ -11,8 +11,7 @@ import {CurrencymetabolitesService, AppDataLoader} from './services';
     HttpModule,
   ],
   providers: [
-    AppDataLoader,
-    CurrencymetabolitesService
+    AppDataLoader
   ],
 })
 export class agbCommonModule { }

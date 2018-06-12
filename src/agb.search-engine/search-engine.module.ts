@@ -15,8 +15,7 @@ import {
   SearchPageComponent,
   SearchResultComponent,
   speciesComponent,
-  speciesDetailComponent,
-  AnalysisSearchComponent
+  speciesDetailComponent
 } from './components';
 
 //import { VisualizationModule } from "../agb.visualization";
@@ -44,8 +43,7 @@ import { searchEngineRouting } from './search-engine.routes';
     SearchPageComponent,
     SearchResultComponent,
     speciesComponent,
-    speciesDetailComponent,
-    AnalysisSearchComponent
+    speciesDetailComponent
   ]
 })
 export class SearchEngineModule { }
