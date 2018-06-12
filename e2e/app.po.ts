@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class MetabolPage {
+export class agbPage {
   navigateTo() {
     return browser.get('/');
   }

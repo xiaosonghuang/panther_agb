@@ -3,16 +3,11 @@
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" id="logo"  [routerLink]="['search']">
-        <img src="assets/img/logo.png" alt=""/>
-        <span>Metabolitics - 0.0.8</span>
+        <img src="assets/img/panther_logo.jpg" alt=""/>
+        <span>Ancestral Genome Browser - 0.0.1</span>
       </a>
     </div>
     <div class="nav navbar-nav navbar-right">
-      <button mat-button [routerLink]="['analyze']">Analyze</button>
-      <mat-menu #searchMenu="matMenu">
-	<button mat-menu-item [routerLink]="['search']">Search Metabolites-Reactions</button>
-	<button mat-menu-item [routerLink]="['search-analysis']">Search Metabolomics Analysis</button>
-      </mat-menu>
       <button mat-button [matMenuTriggerFor]="searchMenu">
 	Search
       </button>
@@ -20,8 +15,7 @@
 	Documentation
       </button>
       <mat-menu #browseMenu="matMenu">
-	<button mat-menu-item [routerLink]="['subsystem']">Browse Pathways</button>
-	<button mat-menu-item  [routerLink]="['past-analysis']">Browse Analysis</button>
+	<button mat-menu-item [routerLink]="['species']">Browse Species</button>
       </mat-menu>
       <button mat-button [matMenuTriggerFor]="browseMenu">
 	Browse

@@ -1,11 +1,11 @@
-# Metabol
+# agb
 
-[![Build Status](https://travis-ci.org/MuhammedHasan/metabol.svg?branch=develop)](https://travis-ci.org/MuhammedHasan/metabol) [![Join the chat at https://gitter.im/MuhammedHasan/metabol](https://badges.gitter.im/MuhammedHasan/metabol.svg)](https://gitter.im/MuhammedHasan/metabol?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/MuhammedHasan/agb.svg?branch=develop)](https://travis-ci.org/MuhammedHasan/agb) [![Join the chat at https://gitter.im/MuhammedHasan/agb](https://badges.gitter.im/MuhammedHasan/agb.svg)](https://gitter.im/MuhammedHasan/agb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Web tools for our metabolic data analyze research project. This tool will help researchers to use our analyze algorithms and provide searching functionality in our database that includes reaction and metabolite in a human body with helpful visualizations.
+Web tools for our agbic data analyze research project. This tool will help researchers to use our analyze algorithms and provide searching functionality in our database that includes gene and metabolite in a human body with helpful visualizations.
 
 ## Demo
-[Link](http://metabolitics.biodb.sehir.edu.tr/)
+[Link](http://agbitics.biodb.sehir.edu.tr/)
 
 ## Install
 Run `npm install` for installation.

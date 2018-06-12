@@ -1,10 +1,10 @@
-import { MetabolPage } from './app.po';
+import { agbPage } from './app.po';
 
-describe('metabol App', () => {
-  let page: MetabolPage;
+describe('agb App', () => {
+  let page: agbPage;
 
   beforeEach(() => {
-    page = new MetabolPage();
+    page = new agbPage();
   });
 
   it('should display message saying app works', () => {

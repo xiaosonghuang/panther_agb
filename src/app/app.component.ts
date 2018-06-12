@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AppSettings} from './app.settings';
-import {AppDataLoader} from '../metabol.common/services'
-import {LoginService} from '../metabol.auth/services';
+import {AppDataLoader} from '../agb.common/services'
+import {LoginService} from '../agb.auth/services';
 
 @Component({
   selector: 'app-root',

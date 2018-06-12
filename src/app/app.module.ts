@@ -12,12 +12,12 @@ import { routing, appRoutingProviders } from './app.routes';
 import { AppComponent } from './app.component';
 
 import { DocumentationModule } from '../documentation';
-import { MetabolCommonModule } from '../metabol.common';
-import { SearchEngineModule } from "../metabol.search-engine";
-import { VisualizationModule } from "../metabol.visualization";
-import { MetabolAuthModule } from "../metabol.auth";
-import { SubsystemAnalyzeModule } from "../metabol.subsystem-analyze";
-import { MetabolPanelModule } from '../metabol.panel';
+import { agbCommonModule } from '../agb.common';
+import { SearchEngineModule } from "../agb.search-engine";
+//import { VisualizationModule } from "../agb.visualization";
+import { agbAuthModule } from "../agb.auth";
+import { speciesAnalyzeModule } from "../agb.species-analyze";
+//import { agbPanelModule } from '../agb.panel';
 
 
 @NgModule({
@@ -29,13 +29,13 @@ import { MetabolPanelModule } from '../metabol.panel';
     FormsModule,
     HttpModule,
 
-    MetabolCommonModule,
+    agbCommonModule,
     DocumentationModule,
-    MetabolAuthModule,
+    agbAuthModule,
     SearchEngineModule,
-    SubsystemAnalyzeModule,
-    MetabolPanelModule,
-    VisualizationModule,
+    speciesAnalyzeModule,
+    //agbPanelModule,
+    //VisualizationModule,
 
     NgPipesModule,
     MaterialModule,

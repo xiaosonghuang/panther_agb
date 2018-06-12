@@ -1,0 +1,47 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <search-bar></search-bar>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" *ngIf="filteredgenes.length">
+      <h2>genes
+        <small>-
+          {{filteredgenes.length}}
+          Result Found</small>
+      </h2>
+      <p *ngFor="let item of filteredgenes; let i=index ">
+        <a [routerLink]="['/gene', item.id]">
+          <b>{{item.id}}</b> {{item.name}}
+        </a>
+      </p>
+    </div>
+    <div class="col-md-6" *ngIf="filteredmetabolites.length">
+      <h2>metabolites
+        <small>-
+          {{filteredmetabolites.length}}
+          Result Found</small>
+      </h2>
+      <p *ngFor="let item of filteredmetabolites; let i=index">
+        <a [routerLink]="['/metabolite', item.id]">
+          <b>{{item.id}}</b> {{item.name}}
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="al">
+    <div class="row" *ngIf="filteredgenes.length == 0 && filteredmetabolites.length == 0 ">
+      <h1>NOTHING FOUND</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <br>
+  </div>
+</div>

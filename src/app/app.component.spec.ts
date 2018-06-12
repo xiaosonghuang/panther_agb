@@ -4,11 +4,11 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {APP_BASE_HREF} from '@angular/common';
 
-import {MetabolCommonModule} from '../metabol.common';
+import {agbCommonModule} from '../agb.common';
 import { routing, appRoutingProviders }  from './app.routes';
 
 
-describe('App: MetabolNew', () => {
+describe('App: agbNew', () => {
   // beforeEach(() => {
   //
   //   TestBed.configureTestingModule({
@@ -17,7 +17,7 @@ describe('App: MetabolNew', () => {
   //     ],
   //     imports: [
   //       routing,
-  //       MetabolCommonModule,
+  //       agbCommonModule,
   //     ],
   //     providers: [
   //       appRoutingProviders,
