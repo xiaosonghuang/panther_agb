@@ -16,7 +16,7 @@ import { agbCommonModule } from '../agb.common';
 import { SearchEngineModule } from "../agb.search-engine";
 //import { VisualizationModule } from "../agb.visualization";
 import { agbAuthModule } from "../agb.auth";
-import { speciesAnalyzeModule } from "../agb.species-analyze";
+//import { speciesAnalyzeModule } from "../agb.species-analyze";
 //import { agbPanelModule } from '../agb.panel';
 
 
@@ -33,7 +33,7 @@ import { speciesAnalyzeModule } from "../agb.species-analyze";
     //DocumentationModule,
     agbAuthModule,
     SearchEngineModule,
-    speciesAnalyzeModule,
+    //speciesAnalyzeModule,
     //agbPanelModule,
     //VisualizationModule,
 
