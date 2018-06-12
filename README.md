@@ -1,4 +1,4 @@
-# agb
+# Ancestral Genome Browser
 
 ## Install
 Run `npm install` for installation.
