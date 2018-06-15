@@ -10,16 +10,13 @@ export class AppDataLoader {
 
   constructor(private http: Http) { }
 
-  get(collection: string, callback: (data) => void) {
+  get(url: string, callback: (data) => void) {
     // ToDo: set app version to setting and check if do not match then clean localStorage
-    let localCol = localStorage.getItem(collection);
-    if (localCol) callback(JSON.parse(localCol));
-    else this.http.get(`assets/datasets/${collection}.json`)
-      .map(res => res.json())
+    //let localCol = localStorage.getItem(collection);
+    this.http.get(url)
       .subscribe(data => {
-        localStorage.setItem(collection, JSON.stringify(data));
-        callback(data);
-      });
+        console.log(data);
+    });
   }
 
 }

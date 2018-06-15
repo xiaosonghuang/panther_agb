@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 //import { DocumentationModule } from '../documentation';
 import { agbCommonModule } from '../agb.common';
 import { SearchEngineModule } from "../agb.search-engine";
+import { ListService } from '../agb.common/services/data-loader/list.service';
 //import { VisualizationModule } from "../agb.visualization";
 import { agbAuthModule } from "../agb.auth";
 //import { speciesAnalyzeModule } from "../agb.species-analyze";
@@ -43,7 +44,7 @@ import { agbAuthModule } from "../agb.auth";
 
     routing
   ],
-  providers: [appRoutingProviders],
+  providers: [appRoutingProviders, ListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
