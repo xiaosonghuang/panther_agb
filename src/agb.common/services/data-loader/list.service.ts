@@ -10,13 +10,13 @@ export class ListService {
 
     constructor(private http: Http) { }
 
-    //private serverApi= 'http://localhost:3000';
+    private serverApi= 'http://localhost:3000';
 
     public getListsBySpecies(species):Observable<List[]> {
 
-        //let URI = `${this.serverApi}/genelist/species/${species}`;
-        let URI = 'http://localhost:3000/genelist/species/Eukaryota';
-        console.log(this.http.get(URI));
+        let URI = `${this.serverApi}/genelist/species/${species}`;
+        //let URI = 'http://localhost:3000/genelist/species/Eukaryota';
+        //console.log(this.http.get(URI));
         return this.http.get(URI)
             .map(res => res.json())
             .map(res => <List[]>res.lists);
@@ -24,8 +24,8 @@ export class ListService {
 
     public getAllSpecies() {
 
-        //let URI = `${this.serverApi}/genelist/species/${species}`;
-        let URI = 'http://localhost:3000/genelist/species';
+        let URI = `${this.serverApi}/genelist/species`;
+        //let URI = 'http://localhost:3000/genelist/species';
         //console.log(this.http.get(URI));
         return this.http.get(URI)
             .map(res => res.json())

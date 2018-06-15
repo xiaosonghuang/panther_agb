@@ -8,9 +8,9 @@
     <div class="col-md-2">
       <ul class="list-group">
         <li class="list-group-item" *ngFor="let s of species | orderBy">
-          <!-- <a [routerLink]="['detail/', encodeURIComponent(s)]"> -->
+          <a [routerLink]="['detail/', encodeURIComponent(s)]">
             {{ s }}
-          <!-- </a> -->
+          </a>
         </li>
       </ul>
     </div>
