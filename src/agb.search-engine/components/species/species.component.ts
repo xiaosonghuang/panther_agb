@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppDataLoader } from '../../../agb.common/services';
+//import { AppDataLoader } from '../../../agb.common/services';
 import { ListService } from '../../../agb.common/services/data-loader/list.service';
 //import { List } from '../../../agb.common/services/models/List';
 import * as _ from 'lodash';
@@ -46,7 +46,7 @@ export class speciesComponent implements OnInit {
             this.species = response;
             console.log(this.species);
           });
-  }
+        }
 
 
 

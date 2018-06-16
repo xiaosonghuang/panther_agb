@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { AppDataLoader } from '../../../agb.common/services';
+//import { AppDataLoader } from '../../../agb.common/services';
 import { ListService } from '../../../agb.common/services/data-loader/list.service';
 import { List } from '../../../agb.common/services/models/List';
-import * as _ from 'lodash';
+//import * as _ from 'lodash';
 
 @Component({
   selector: 'app-species-detail',
@@ -43,7 +43,7 @@ export class speciesDetailComponent implements OnInit {
           this.listServ.getListsBySpecies(this.species).subscribe(
             response => {
               this.lists = response;
-              console.log(this.lists);
+              //console.log(this.lists);
             });
     }
 
