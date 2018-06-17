@@ -27,6 +27,9 @@ export class ListService {
         let URI = `${this.serverApi}/genelist/species`;
         //let URI = 'http://localhost:3000/genelist/species';
         //console.log(this.http.get(URI));
+        /* console.log(this.http.get(URI)
+        .map(res => res.json())
+        .map(res => res.lists)); */
         return this.http.get(URI)
             .map(res => res.json())
             .map(res => res.lists);

@@ -43,7 +43,7 @@ export class speciesComponent implements OnInit {
 
         this.listServ.getAllSpecies().subscribe(
           response => {
-            this.species = response;
+            this.species = response[0].species;
             console.log(this.species);
           });
         }
