@@ -15,7 +15,7 @@ export const SearchEngineRoutes: Routes = [
   { path: 'search-result/:query', component: SearchResultComponent },
   {
     path: 'species', component: speciesComponent,
-    children: [{ path: ':id', component: speciesDetailComponent }]
+    children: [{ path: 'detail/:id', component: speciesDetailComponent }]
   },
   { path: 'species', component: speciesComponent },
   { path: '', redirectTo: '/search', pathMatch: 'full' }
