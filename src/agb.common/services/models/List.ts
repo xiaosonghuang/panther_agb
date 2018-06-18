@@ -10,5 +10,10 @@ export interface List {
 
 export interface GeneList {
     species: string;
-    genes: [string];
+    genes: [
+        {
+            ptn:string;
+            name:string;
+        }
+    ];
 }

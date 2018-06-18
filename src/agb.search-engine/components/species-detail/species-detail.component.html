@@ -8,8 +8,8 @@
     <tbody>
       <tr *ngFor="let g of genes">
         <td class="col-md-4">
-          <a [routerLink]="['/gene', g]">
-              {{g}}
+          <a [routerLink]="['/gene', g.ptn]">
+              {{g.name}}
             </a>
         </td>
       </tr>

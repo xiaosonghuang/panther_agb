@@ -8,6 +8,10 @@
       </a>
     </div>
     <div class="nav navbar-nav navbar-right">
+      <mat-menu #searchMenu="matMenu">
+      <button mat-menu-item [routerLink]="['search']">Search Species or Genes</button>
+      <!-- <button mat-menu-item [routerLink]="['search-gene']">Search Genes</button> -->
+      </mat-menu>
       <button mat-button [matMenuTriggerFor]="searchMenu">
 	Search
       </button>

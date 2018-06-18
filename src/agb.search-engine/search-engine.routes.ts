@@ -14,11 +14,11 @@ export const SearchEngineRoutes: Routes = [
   { path: 'search', component: SearchPageComponent },
   { path: 'search-result/:query', component: SearchResultComponent },
   {
-    path: 'species', component: speciesComponent
-    //children: [{ path: 'detail/:id', component: speciesDetailComponent }]
+    path: 'species', component: speciesComponent,
+    //children: [{ path: ':id', component: speciesDetailComponent }]
   },
   {path: 'species/:id', component: speciesDetailComponent},
-  { path: 'species', component: speciesComponent },
+  //{ path: 'species', component: speciesComponent },
   { path: '', redirectTo: '/search', pathMatch: 'full' }
 ];
 

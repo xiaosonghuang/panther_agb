@@ -9,7 +9,12 @@ const SpeciesSchema = mongoose.Schema({
 
 const SpeciesGenesSchema = mongoose.Schema({
     species: String,
-    genes: [String]
+    genes: [
+        {
+            ptn:String,
+            name:String
+        }
+    ]
 });
 
 const Species = module.exports = mongoose.model('Species', SpeciesSchema );
