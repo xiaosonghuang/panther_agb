@@ -7,14 +7,17 @@
         </h3>
       </div>
       <div class="panel-body">
-        <p *ngIf="gene.id ">
-          id: {{gene.id}}
+        <p *ngIf="gene.ptn ">
+          ptn: {{gene.ptn}}
         </p>
         <p *ngIf="gene.name">
           name: {{gene.name}}
         </p>
-        <p *ngIf="gene.name">
+        <p *ngIf="gene.species">
           species: {{ gene.species }}
+        </p>
+        <p *ngIf="gene.sequence">
+          sequence: {{ gene.sequence }}
         </p>
 
         

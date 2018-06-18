@@ -7,3 +7,8 @@ export interface List {
     type: string;
 
 }
+
+export interface GeneList {
+    species: string;
+    genes: [string];
+}

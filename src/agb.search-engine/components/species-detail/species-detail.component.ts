@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 //import { AppDataLoader } from '../../../agb.common/services';
 import { ListService } from '../../../agb.common/services/data-loader/list.service';
-import { List } from '../../../agb.common/services/models/List';
+import { GeneList } from '../../../agb.common/services/models/List';
 //import * as _ from 'lodash';
 
 @Component({
@@ -20,7 +20,7 @@ export class speciesDetailComponent implements OnInit {
 
 
   species: string;
-  private lists: List[] = [];
+  private lists: GeneList[] = [];
   genes: any[];
   //connectedspeciess: string[];
 
@@ -44,6 +44,8 @@ export class speciesDetailComponent implements OnInit {
             response => {
               this.lists = response;
               //console.log(this.lists);
+              this.genes = this.lists[0].genes.slice(0, 20);
+              console.log(this.genes);
             });
     }
 

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import { AppDataLoader } from '../../../agb.common/services';
+//import { AppDataLoader } from '../../../agb.common/services';
+import { ListService } from '../../../agb.common/services/data-loader/list.service';
+import { List } from '../../../agb.common/services/models/List';
 //import {geneVisualizationComponent} from '../../../agb.visualization/components'
 import * as _ from 'lodash';
 
@@ -9,7 +11,7 @@ import * as _ from 'lodash';
   templateUrl: 'gene-details.component.html',
   styleUrls: ['gene-details.component.css'],
 })
-export class geneDetailsComponent implements OnInit {
+/* export class geneDetailsComponent implements OnInit {
 
   gene;
   relatedmetabolites;
@@ -26,4 +28,43 @@ export class geneDetailsComponent implements OnInit {
     });
   }
 
-}
+} */
+
+export class geneDetailsComponent implements OnInit {
+
+  constructor(
+    private route: ActivatedRoute,
+    //private loader: AppDataLoader,
+    private listServ: ListService) { }
+
+
+  ptn: string;
+  //private lists: List[] = [];
+  gene;
+  //connectedspeciess: string[];
+
+  ngOnInit() {
+    //console.log(this.route.params);
+    this.route.params.subscribe((params) => {
+      this.ptn = params['ptn'];
+      console.log(this.ptn);
+    });
+    this.loadGenes();
+  };
+
+
+  public loadGenes() {
+
+      //Get all gene list from server and update the lists property
+      /* this.listServ.getAllSpecies().subscribe(
+          response => this.species = response) */
+  
+          this.listServ.getGeneByPtn(this.ptn).subscribe(
+            response => {
+              //console.log(response);
+              this.gene = response[0];
+              console.log(this.gene);
+            });
+  }
+
+  }

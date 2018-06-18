@@ -12,7 +12,7 @@ import * as _ from 'lodash';
 export class speciesComponent implements OnInit {
 
   //private lists: List[] = [];
-  species: string[];
+  specs: string[];
   encodeURIComponent = encodeURIComponent;
 
   /* constructor(private loader: AppDataLoader) { }
@@ -43,8 +43,8 @@ export class speciesComponent implements OnInit {
 
         this.listServ.getAllSpecies().subscribe(
           response => {
-            this.species = response[0].species;
-            console.log(this.species);
+            this.specs = response[0].species;
+            //console.log(this.specs);
           });
         }
 
