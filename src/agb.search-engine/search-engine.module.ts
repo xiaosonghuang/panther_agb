@@ -34,7 +34,7 @@ import { searchEngineRouting } from './search-engine.routes';
     searchEngineRouting,
     //VisualizationModule,
   ],
-  // providers: [searchEngineRoutingProviders],
+  //providers: [searchEngineRoutingProviders],
   declarations: [
     //ChemicalEquationComponent,
     geneDetailsComponent,

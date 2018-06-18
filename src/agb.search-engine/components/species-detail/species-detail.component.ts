@@ -44,7 +44,8 @@ export class speciesDetailComponent implements OnInit {
             response => {
               this.lists = response;
               //console.log(this.lists);
-              this.genes = this.lists[0].genes.slice(0, 20);
+              //this.genes = this.lists[0].genes.slice(0, 20);
+              this.genes = this.lists[0].genes;
               console.log(this.genes);
             });
     }
