@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<!-- <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">
       Genes
@@ -15,4 +15,28 @@
       </tr>
     </tbody>
   </table>
-</div>
+</div> -->
+
+<div class="panel-heading">
+    <h3 class="panel-title">
+      Genes
+    </h3>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let g of genes | orderBy">
+            <nav>
+            <a [routerLink]="['./', g.ptn]" routerLinkActive="active">
+              {{ g.name }}
+            </a>
+          </nav>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>

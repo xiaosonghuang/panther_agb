@@ -8,13 +8,15 @@
     <div class="col-md-2">
       <ul class="list-group">
         <li class="list-group-item" *ngFor="let s of specs | orderBy">
-          <a [routerLink]="['./', encodeURIComponent(s)]">
+          <nav>
+          <a [routerLink]="['./', encodeURIComponent(s)]" routerLinkActive="active">
             {{ s }}
           </a>
+        </nav>
         </li>
       </ul>
     </div>
-    <div class="col-md-10">
+    <div class="col-md-5">
       <router-outlet></router-outlet>
     </div>
   </div>

@@ -73,6 +73,20 @@ router.get('/gene/:ptn',(req,res) => {
     });
 });
 
+/* router.get('/genes',(req,res) => {
+    //let ptn = req.params.ptn;
+    genelist.getAllgenes((err, lists)=> {
+        if(err) {
+            res.json({success:false, message: `Failed to load all lists. Error: ${err}`});
+        }
+        else {
+            res.write(JSON.stringify({success: true, lists:lists},null,2));
+            res.end();
+
+    }
+    });
+}); */
+
 //POST HTTP method to /genelist
 
 router.post('/', (req,res,next) => {

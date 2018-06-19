@@ -47,23 +47,24 @@ export class geneDetailsComponent implements OnInit {
     //console.log(this.route.params);
     this.route.params.subscribe((params) => {
       this.ptn = params['ptn'];
-      console.log(this.ptn);
+      //console.log(this.ptn);
+      this.loadGenes(this.ptn);
     });
-    this.loadGenes();
+    
   };
 
 
-  public loadGenes() {
+  public loadGenes(ptn) {
 
       //Get all gene list from server and update the lists property
       /* this.listServ.getAllSpecies().subscribe(
           response => this.species = response) */
   
-          this.listServ.getGeneByPtn(this.ptn).subscribe(
+          this.listServ.getGeneByPtn(ptn).subscribe(
             response => {
               //console.log(response);
               this.gene = response[0];
-              console.log(this.gene);
+              //console.log(this.gene);
             });
   }
 

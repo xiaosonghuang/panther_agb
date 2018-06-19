@@ -29,8 +29,9 @@ export class speciesDetailComponent implements OnInit {
     this.route.params.subscribe((params) => {
       this.species = decodeURIComponent(params['id']);
       //console.log(this.species);
+      this.loadGenes();
     });
-    this.loadGenes();
+    
   };
 
 

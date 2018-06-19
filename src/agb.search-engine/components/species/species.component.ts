@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 //import { AppDataLoader } from '../../../agb.common/services';
 import { ListService } from '../../../agb.common/services/data-loader/list.service';
 //import { List } from '../../../agb.common/services/models/List';
-import * as _ from 'lodash';
+//import * as _ from 'lodash';
 
 @Component({
   selector: 'app-species',
