@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgPipesModule } from 'ngx-pipes';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material.module';
@@ -30,6 +31,7 @@ import { searchEngineRouting } from './search-engine.routes';
     MaterialModule,
     FlexLayoutModule,
     NgPipesModule,
+    NgxPaginationModule,
 
     searchEngineRouting,
     //VisualizationModule,

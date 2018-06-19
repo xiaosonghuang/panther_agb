@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-md-2">
       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let s of specs | orderBy">
+        <li class="list-group-item" *ngFor="let s of specs | orderBy | paginate: { itemsPerPage: 10, currentPage: p }">
           <nav>
           <a [routerLink]="['./', encodeURIComponent(s)]" routerLinkActive="active">
             {{ s }}
@@ -15,6 +15,7 @@
         </nav>
         </li>
       </ul>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </div>
     <div class="col-md-5">
       <router-outlet></router-outlet>
