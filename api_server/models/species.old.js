@@ -8,9 +8,7 @@ const SpeciesSchema = mongoose.Schema({
 });
 
 const SpeciesGenesSchema = mongoose.Schema({
-    short_name: String,
-    taxon_id: String,
-    long_name: String,
+    species: String,
     genes: [
         {
             ptn:String,
@@ -29,5 +27,5 @@ module.exports.getAllSpecies = (callback) => {
 }
 
 module.exports.getAllGenesBySpecies = (species, callback) => {
-    SpeciesGenes.find({'short_name': species}).exec(callback);
+    SpeciesGenes.find({'species': species}).exec(callback);
 }
