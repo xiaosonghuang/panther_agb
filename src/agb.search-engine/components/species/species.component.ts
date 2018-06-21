@@ -73,4 +73,14 @@ export class speciesComponent {
 
   //onEvent = ($event) => console.log($event);
 
+  /* @ViewChild('tree') tree;
+
+  ngAfterViewInit() {
+    const someNode = this.tree.treeModel.getNodeById('someId');
+    someNode.expand();
+           
+    const firstRoot = this.tree.treeModel.roots[0];
+    firstRoot.setActiveAndVisible();
+  } */
+
 }
