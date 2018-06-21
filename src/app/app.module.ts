@@ -7,6 +7,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications'
 import { NgPipesModule } from 'ngx-pipes';
 import { MaterialModule } from '../material.module';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { TreeModule } from 'angular-tree-component';
 
 
 import { routing, appRoutingProviders } from './app.routes';
@@ -31,6 +32,7 @@ import { agbAuthModule } from "../agb.auth";
     FormsModule,
     HttpModule,
     NgxPaginationModule,
+    TreeModule,
 
     agbCommonModule,
     //DocumentationModule,

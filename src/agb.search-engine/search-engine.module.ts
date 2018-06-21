@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TreeModule } from 'angular-tree-component';
 
 import { NgPipesModule } from 'ngx-pipes';
 import {NgxPaginationModule} from 'ngx-pagination';
@@ -34,6 +35,7 @@ import { searchEngineRouting } from './search-engine.routes';
     NgxPaginationModule,
 
     searchEngineRouting,
+    TreeModule
     //VisualizationModule,
   ],
   //providers: [searchEngineRoutingProviders],
