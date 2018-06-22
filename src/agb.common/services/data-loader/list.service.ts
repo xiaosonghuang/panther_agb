@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import {Observable} from 'rxjs';
-import { List, GeneList } from '../models/List'
+import { List, SpeciesGeneList } from '../models/List'
 
 import 'rxjs/add/operator/map';
 
@@ -22,14 +22,14 @@ export class ListService {
             .map(res => <List[]>res.lists);
     } */
 
-    public getListsBySpecies(species):Observable<GeneList[]> {
+    public getListsBySpecies(species):Observable<SpeciesGeneList[]> {
 
         let URI = `${this.serverApi}/genelist/species/${species}`;
         //let URI = 'http://localhost:3000/genelist/species/Eukaryota';
         //console.log(this.http.get(URI));
         return this.http.get(URI)
             .map(res => res.json())
-            .map(res => <GeneList[]>res.lists);
+            .map(res => <SpeciesGeneList[]>res.lists);
     }
 
     public getAllSpecies() {

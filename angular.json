@@ -28,12 +28,15 @@
               "node_modules/@swimlane/ngx-datatable/release/assets/icons.css",
               "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/phylotree/phylotree.css",
               "src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/escher-vis/js/dist/escher.min.js"
+              "node_modules/escher-vis/js/dist/escher.min.js",
+              "node_modules/phylotree/phylotree.js",
+              "node_modules/underscore/underscore-min.js"
             ]
           },
           "configurations": {

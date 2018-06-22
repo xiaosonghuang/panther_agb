@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MatPaginator, MatSort, MatTableDataSource, PageEvent } from '@angular/material';
 
 //import { AppDataLoader } from '../../../agb.common/services';
 import { ListService } from '../../../agb.common/services/data-loader/list.service';
-import { GeneList } from '../../../agb.common/services/models/List';
+import { SpeciesGeneList } from '../../../agb.common/services/models/List';
 //import * as _ from 'lodash';
 
 @Component({
@@ -20,7 +21,7 @@ export class speciesDetailComponent implements OnInit {
 
 
   species: string;
-  private lists: GeneList[] = [];
+  private lists: SpeciesGeneList[] = [];
   genes: any[];
   //connectedspeciess: string[];
 
@@ -47,20 +48,9 @@ export class speciesDetailComponent implements OnInit {
               //console.log(this.lists);
               //this.genes = this.lists[0].genes.slice(0, 20);
               this.genes = this.lists[0].genes;
-              console.log(this.genes);
+              //console.log(this.genes);
             });
     }
 
   }
 
-  /* ngOnInit() {
-    this.route.params.subscribe((params) => {
-      this.loader.get('recon6', (recon) => {
-        this.species = decodeURIComponent(params['id']);
-        console.log(recon);
-        console.log(this.species);
-        this.genes = recon.species[this.species].map(x => recon.genes[x]);
-        console.log(this.genes);
-      });
-    });
-  } */

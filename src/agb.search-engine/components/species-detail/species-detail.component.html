@@ -1,43 +1,30 @@
-<!-- <div class="panel panel-default">
+<div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">
-      Genes
+      Genes (total {{genes.length}})
     </h3>
   </div>
-  <table class="table table-hover">
-    <tbody>
+  <table class="table table-hover" style="width:100%">
+    <tbody class="col-md-4">
+        <tr>
+            <th>Public ID</th>
+            <th>Gene Name</th> 
+            <th>PANTHER Family</th>
+          </tr>
       <tr *ngFor="let g of genes">
-        <td class="col-md-4">
-          <a [routerLink]="['/gene', g.ptn]">
-              {{g.name}}
+        <td>
+          <!-- <a [routerLink]="['/gene', g.ptn]"> -->
+            <a href="http://pantree.org/node/annotationNode.jsp?id={{g.ptn}}">
+              {{g.ptn}}
             </a>
         </td>
+        <td>
+            <!-- <a [routerLink]="['/gene', g.ptn]"> -->
+              <a href="http://pantree.org/node/annotationNode.jsp?id={{g.ptn}}">
+                {{g.name}}
+              </a>
+          </td>
       </tr>
     </tbody>
   </table>
-</div> -->
-
-<div class="panel-heading">
-    <h3 class="panel-title">
-      Genes
-    </h3>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-5">
-        <ul class="list-group">
-          <li class="list-group-item" *ngFor="let g of genes | orderBy | paginate: { itemsPerPage: 10, currentPage: p }">
-            <nav>
-            <a [routerLink]="['./', g.ptn]" routerLinkActive="active">
-              {{ g.name }}
-            </a>
-          </nav>
-          </li>
-        </ul>
-        <pagination-controls (pageChange)="p = $event"></pagination-controls>
-      </div>
-      <div class="col-md-6">
-        <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
+</div>

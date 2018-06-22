@@ -11,8 +11,6 @@ import {
 
 export const SearchEngineRoutes: Routes = [
   { path: 'gene/:ptn', component: geneDetailsComponent },
-  { path: 'search', component: SearchPageComponent },
-  { path: 'search-result/:query', component: SearchResultComponent },
   {
     path: 'species', component: speciesComponent,
     children: [{ path: ':id', component: speciesDetailComponent,
@@ -20,7 +18,7 @@ export const SearchEngineRoutes: Routes = [
   },
   //{path: 'species/:id', component: speciesDetailComponent},
   //{ path: 'species', component: speciesComponent },
-  { path: '', redirectTo: '/search', pathMatch: 'full' }
+  { path: '', redirectTo: 'species', pathMatch: 'full' }
 ];
 
 export const searchEngineRouting: ModuleWithProviders = RouterModule.forRoot(SearchEngineRoutes);

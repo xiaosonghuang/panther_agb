@@ -13,9 +13,9 @@ import {
   //ChemicalEquationComponent,
   geneDetailsComponent,
   //metaboliteDetailsComponent,
-  SearchBarComponent,
-  SearchPageComponent,
-  SearchResultComponent,
+  //SearchBarComponent,
+  //SearchPageComponent,
+  //SearchResultComponent,
   speciesComponent,
   speciesDetailComponent
 } from './components';
@@ -43,9 +43,9 @@ import { searchEngineRouting } from './search-engine.routes';
     //ChemicalEquationComponent,
     geneDetailsComponent,
     //metaboliteDetailsComponent,
-    SearchBarComponent,
-    SearchPageComponent,
-    SearchResultComponent,
+    //SearchBarComponent,
+    //SearchPageComponent,
+    //SearchResultComponent,
     speciesComponent,
     speciesDetailComponent
   ]

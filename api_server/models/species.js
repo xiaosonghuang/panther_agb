@@ -25,7 +25,7 @@ const SpeciesGenes = module.exports = mongoose.model('species_genes', SpeciesGen
 
 //GeneList.find() returns all the lists
 module.exports.getAllSpecies = (callback) => {
-    Species.find(callback);
+    SpeciesGenes.find({}).select({ "short_name": 1, "long_name": 1, "taxon_id": 1, "_id": 0}).exec(callback);
 }
 
 module.exports.getAllGenesBySpecies = (species, callback) => {

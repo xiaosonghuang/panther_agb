@@ -8,8 +8,10 @@ export interface List {
 
 }
 
-export interface GeneList {
-    species: string;
+export interface SpeciesGeneList {
+    short_name: string;
+    taxon_id: string;
+    long_name: string;
     genes: [
         {
             ptn:string;
