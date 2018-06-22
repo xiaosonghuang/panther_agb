@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AppSettings} from './app.settings';
 import {AppDataLoader} from '../agb.common/services'
-import {LoginService} from '../agb.auth/services';
+//import {LoginService} from '../agb.auth/services';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ export class AppComponent {
 
   notificationOptions = AppSettings.NOTIFICATION_OPTIONS;
 
-  constructor(public loginService: LoginService) { }
+  //constructor(public loginService: LoginService) { }
 
 
 }

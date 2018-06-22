@@ -18,7 +18,7 @@ import { agbCommonModule } from '../agb.common';
 import { SearchEngineModule } from "../agb.search-engine";
 import { ListService } from '../agb.common/services/data-loader/list.service';
 //import { VisualizationModule } from "../agb.visualization";
-import { agbAuthModule } from "../agb.auth";
+//import { agbAuthModule } from "../agb.auth";
 //import { speciesAnalyzeModule } from "../agb.species-analyze";
 //import { agbPanelModule } from '../agb.panel';
 
@@ -36,7 +36,7 @@ import { agbAuthModule } from "../agb.auth";
 
     agbCommonModule,
     //DocumentationModule,
-    agbAuthModule,
+    //agbAuthModule,
     SearchEngineModule,
     //speciesAnalyzeModule,
     //agbPanelModule,

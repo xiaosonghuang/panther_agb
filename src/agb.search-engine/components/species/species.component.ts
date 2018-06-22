@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 //import { AppDataLoader } from '../../../agb.common/services';
 import { ListService } from '../../../agb.common/services/data-loader/list.service';
@@ -38,6 +38,12 @@ export class speciesComponent {
   
   constructor (private router: Router, private listServ: ListService) {}
 
+  @ViewChild('tree') tree;
+
+  ngAfterViewInit() {
+    this.tree.treeModel.expandAll();
+  }
+
   species: string;
   encodeURIComponent = encodeURIComponent;
   //@Input() public dataSource: any[];
@@ -71,6 +77,8 @@ export class speciesComponent {
       }
     }
   };
+
+  
 
   //onEvent = ($event) => console.log($event);
 

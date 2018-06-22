@@ -8,12 +8,8 @@
       </a>
     </div>
     <div class="nav navbar-nav navbar-right">
-      <mat-menu #searchMenu="matMenu">
-      <button mat-menu-item [routerLink]="['search']">Search Species or Genes</button>
-      <!-- <button mat-menu-item [routerLink]="['search-gene']">Search Genes</button> -->
-      </mat-menu>
-      <button mat-button [matMenuTriggerFor]="searchMenu">
-	Search
+      <button mat-button [routerLink]="['./']">
+	Home
       </button>
       <mat-menu #browseMenu="matMenu">
 	<button mat-menu-item [routerLink]="['species']">Browse Species</button>
@@ -24,10 +20,10 @@
       <button mat-button>
 	Contact
       </button>
-      <button mat-button [routerLink]="['login']" *ngIf="!loginService.isLoggedIn()">
+      <!-- <button mat-button [routerLink]="['login']" *ngIf="!loginService.isLoggedIn()">
 	Login
-      </button>
-      <mat-menu #accountMenu="matMenu">
+      </button> -->
+      <!-- <mat-menu #accountMenu="matMenu">
 	<button mat-menu-item [routerLink]="['panel']">Profile</button>
 	<button mat-menu-item [routerLink]="['past-analysis']">Past Analysis</button>
 	<button mat-menu-item [routerLink]="['panel']" (click)="loginService.logout()">
@@ -36,7 +32,7 @@
       </mat-menu>
       <button mat-button [matMenuTriggerFor]="accountMenu" *ngIf="loginService.isLoggedIn()">
 	Account
-      </button>
+      </button> -->
     </div>
   </div>
 </nav>
