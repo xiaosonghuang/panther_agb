@@ -2,11 +2,13 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 //import { AppDataLoader } from '../../../agb.common/services';
 import { ListService } from '../../../agb.common/services/data-loader/list.service';
+//import * as d3 from "d3";
 import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions } from 'angular-tree-component';
 //import { List } from '../../../agb.common/services/models/List';
 //import * as _ from 'lodash';
 
-
+declare var $: any;
+//declare var phylotree: any;
 /* const actionMapping:IActionMapping = {
   mouse: {
     contextMenu: (tree, node, $event) => {
@@ -77,47 +79,5 @@ export class speciesComponent {
       }
     }
   };
-
-  
-
-  //onEvent = ($event) => console.log($event);
-
-  /* @ViewChild('tree') tree;
-
-  ngAfterViewInit() {
-    const someNode = this.tree.treeModel.getNodeById('someId');
-    someNode.expand();
-           
-    const firstRoot = this.tree.treeModel.roots[0];
-    firstRoot.setActiveAndVisible();
-  } */
-
-  //private lists: List[] = [];
-  //species: string[];
-  //encodeURIComponent = encodeURIComponent;
-
-  /* constructor(private loader: AppDataLoader) { }
-
-  ngOnInit() {
-    this.loader.get('http://localhost:3000/genelist/species/', (recon) => {
-      this.speciess = _.keys(recon.lists);
-      console.log(recon);
-      console.log(this.speciess);
-    });
-  } */
-
-  /* public loadSpecies() {
-
-    //Get all species list from server and update the lists property
-    this.listServ.getAllSpecies().subscribe(
-        response => this.species = response)
-
-        this.listServ.getAllSpecies().subscribe(
-          response => {
-            this.species = response[0].species;
-            console.log(this.species);
-          });
-        } */
-
 
 }

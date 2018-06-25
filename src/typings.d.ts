@@ -11,4 +11,4 @@ interface NodeModule {
   id: string;
 }
 
-declare module 'phylotree';
+declare var phylotree: any;

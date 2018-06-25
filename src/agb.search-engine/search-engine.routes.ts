@@ -5,8 +5,8 @@ import {
   speciesDetailComponent,
   speciesComponent,
   geneDetailsComponent,
-  SearchResultComponent,
-  SearchPageComponent
+  //SearchResultComponent,
+  //SearchPageComponent
 } from "./components";
 
 export const SearchEngineRoutes: Routes = [
