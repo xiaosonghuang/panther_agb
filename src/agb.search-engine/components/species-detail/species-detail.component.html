@@ -13,17 +13,20 @@
           </tr>
       <tr *ngFor="let g of genes">
         <td>
-          <!-- <a [routerLink]="['/gene', g.ptn]"> -->
             <a href="http://pantree.org/node/annotationNode.jsp?id={{g.ptn}}">
               {{g.ptn}}
             </a>
         </td>
         <td>
-            <!-- <a [routerLink]="['/gene', g.ptn]"> -->
               <a href="http://pantree.org/node/annotationNode.jsp?id={{g.ptn}}">
                 {{g.name}}
               </a>
-          </td>
+        </td>
+        <td>
+              <a href="http://www.pantherdb.org/panther/family.do?clsAccession={{g.pthr}}">
+                {{g.pthr}}
+              </a>
+        </td>
       </tr>
     </tbody>
   </table>
