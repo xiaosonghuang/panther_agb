@@ -16,6 +16,10 @@ export interface SpeciesGeneList {
         {
             ptn:string;
             name:string;
+            event:string;
+            pthr:string;
+            proxy_org:string;
+            proxy_gene:string;
         }
     ];
 }
