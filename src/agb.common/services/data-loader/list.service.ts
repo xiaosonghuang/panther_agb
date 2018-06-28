@@ -10,7 +10,7 @@ export class ListService {
 
     constructor(private http: Http) { }
 
-    private serverApi= 'http://68.181.125.145:3000';
+    private serverApi= 'http://35.162.249.160:8347';
 
     /* public getListsBySpecies(species):Observable<List[]> {
 
