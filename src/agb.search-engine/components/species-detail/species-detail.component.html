@@ -4,6 +4,11 @@
       Genes (total {{genes.length}}) of {{species}}
     </h3>
   </div>
+  <label for="" class="vertical-label col-sm-4 col-md-8 text-right"> Select Proxy Species Name</label>
+  <select [(ngModel)]="speName" name="Name" (change)="selectSpe();">
+    <option selected="" value=""></option>
+    <option *ngFor="let spe of extantSpes" [ngValue]="spe.short_name">{{spe.long_name}}</option>
+  </select>
   <table id="genes" class="table table-hover" style="width:100%">
     <tbody class="col-md-4">
         <tr>

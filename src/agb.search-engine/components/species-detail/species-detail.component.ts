@@ -23,7 +23,8 @@ export class speciesDetailComponent implements OnInit {
   species: string;
   private lists: SpeciesGeneList[] = [];
   genes: any[];
-  //connectedspeciess: string[];
+  extantSpes=[{"short_name":"ARATH", "taxon_id":"3702", "long_name":"Arabidopsis thaliana"},{"short_name":"CAEEL", "taxon_id":"6239", "long_name":"Caenorhabditis elegans"},{"short_name":"CHICK", "taxon_id":"9031", "long_name":"Gallus gallus"},{"short_name":"DANRE", "taxon_id":"7955", "long_name":"Danio rerio"},{"short_name":"DICDI", "taxon_id":"44689", "long_name":"Dictyostelium discoideum"},{"short_name":"DROME", "taxon_id":"7227", "long_name":"Drosophila melanogaster"},{"short_name":"ECOLI", "taxon_id":"83333", "long_name":"Escherichia coli"},{"short_name":"HUMAN", "taxon_id":"9606", "long_name":"Homo sapiens"},{"short_name":"MOUSE", "taxon_id":"10090", "long_name":"Mus musculus"},{"short_name":"RAT", "taxon_id":"10116", "long_name":"Rattus norvegicus"},{"short_name":"SCHPO", "taxon_id":"284812", "long_name":"Schizosaccharomyces pombe"},{"short_name":"YEAST", "taxon_id":"559292", "long_name":"Saccharomyces cerevisiae"}];
+  speName:string;
 
   ngOnInit() {
     //console.log(this.route.params);
@@ -50,6 +51,11 @@ export class speciesDetailComponent implements OnInit {
               this.genes = this.lists[0].genes;
               //console.log(this.genes);
             });
+    }
+
+    selectSpe()
+    {
+      console.log(this.speName);
     }
 
   }
