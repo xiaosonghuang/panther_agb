@@ -4,12 +4,13 @@
       Genes (total {{genes.length}}) of {{species}}
     </h3>
   </div>
-  <table class="table table-hover" style="width:100%">
+  <table id="genes" class="table table-hover" style="width:100%">
     <tbody class="col-md-4">
         <tr>
             <th>Public ID</th>
             <th>Gene Name</th> 
             <th>PANTHER Family</th>
+            <th>Proxy Gene</th>
           </tr>
       <tr *ngFor="let g of genes">
         <td>
@@ -27,6 +28,11 @@
                 {{g.pthr}}
               </a>
         </td>
+        <td>
+          <a href="http://pantherdb.org/genes/gene.do?acc={{g.proxy_gene}}">
+            {{g.proxy_gene}}
+          </a>
+    </td>
       </tr>
     </tbody>
   </table>
