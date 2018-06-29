@@ -5,6 +5,8 @@ export interface List {
     species: string;
     sequence: string;
     type: string;
+    pthr: string;
+    proxy_gene: string;
 
 }
 
